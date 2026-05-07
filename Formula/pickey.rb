@@ -1,26 +1,26 @@
 class Pickey < Formula
   desc "Automatic SSH key selection for git"
   homepage "https://github.com/simeoncode/pickey"
-  version "0.3.4"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/simeoncode/pickey/releases/download/v#{version}/pickey-aarch64-apple-darwin"
-      sha256 "1c2dacbc9cf47afb4ca8718c7f47ba5e895fab864d642eb9ab64f8549e41cbf4"
+      sha256 "f63dc0eefff9e3f16a701285a72a61b57ee114337b2d440bc6692e27d725d0bd"
     else
       url "https://github.com/simeoncode/pickey/releases/download/v#{version}/pickey-x86_64-apple-darwin"
-      sha256 "4e25461cf5f56d3e88728d7a55dac3fbb6bd443a882d717768672f37f9846f5c"
+      sha256 "149073c747de15baaca909d4acb59f56e183130c844f5bc019243aae3c651e7a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/simeoncode/pickey/releases/download/v#{version}/pickey-aarch64-unknown-linux-musl"
-      sha256 "3309a9065a9613e7be7a161f29131cf671fa51f37ea5d7cd53f14346651c17a5"
+      sha256 "3de0510895bab5f1caf949b00d29b97b76106865964cd53b09624a280d7c552d"
     else
       url "https://github.com/simeoncode/pickey/releases/download/v#{version}/pickey-x86_64-unknown-linux-musl"
-      sha256 "a326883e9fdcf2e8709e4290d5d443bca6cd7080da10b6a40ceaf1a996b0405f"
+      sha256 "20d929bbf49f41554b10d5376fa6b6ef76fa2a02b8c4cafa8469850bf1f8fee0"
     end
   end
 
